@@ -25,6 +25,12 @@ export const SidebarData = [
 
     subNav: [
       {
+        title: ' Add Sales',
+        path: '/Sales/AddSales',
+        icon: <IoIcons.IoIosPaper color='white'/>
+      },
+    
+      {
         title: 'Sales Return',
         path: '/Sales/SalesReturn',
         icon: <IoIcons.IoIosPaper color='white'/>

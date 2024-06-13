@@ -7,12 +7,14 @@ import Overview from "./pages/DashBoard";
 import { Reports, SalesReport, PurchaseReport, StockSummary } from "./pages/Reports";
 import Purchase , {PurchaseReturn} from "./pages/Purchase";
 import Header from "./pages/Header";
-import Sales, { SalesReturn } from "./pages/Sales";
+import Sales from "./pages/Sales";
 import Items, { AddItems, CategoryList, ItemList } from "./pages/Items";
 import { GST1, GST2, GST3 } from "./pages/GSTReport";
 import Account, { AccountList, AddAccount } from "./pages/Account";
 import Quotation, { NewQuotation, QuotationList } from "./pages/Quotation";
 import Contact, { AddCustomer, AddSupplier, CustomerList, SupplierList } from "./pages/Contact";
+import { SalesReturn } from "./pages/SalesReturn";
+import { AddSales } from "./pages/AddSales";
 
 
 
@@ -24,8 +26,9 @@ function App() {
       <Routes>
         <Route path="/DashBoard" exact component={Overview} />
         <Route path="/Sales" exact component={Sales} />
+        <Route path="/AddSales" exact component={AddSales} />
         <Route path="/Sales/SalesReturn" exact component={SalesReturn} />
-        <Route path="/Purchase" exact component={Purchase} />
+        {/* <Route path="/Purchase" exact component={Purchase} />
         <Route path="/Purchase/PurchaseReturn" exact component={PurchaseReturn} />
         <Route path="/Items" exact component={Items} />
         <Route path="/Items/AddItem" exact component={AddItems} />
@@ -50,7 +53,7 @@ function App() {
         <Route path="/Contact/CustomerList" exact component={CustomerList} />
         <Route path="/Contact/AddSupplier" exact component={AddSupplier} />
         <Route path="/Contact/SupplierList" exact component={SupplierList} />
-        <Route path="/Header" exact Component={Header}/>
+        <Route path="/Header" exact Component={Header}/> */}
       </Routes>
       <Header/>
     </Router>

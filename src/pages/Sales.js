@@ -6,7 +6,7 @@ export default function Sales() {
    <div className='Sales'>
       <h1>Sales</h1>
       
-   
+   <Outlet />
     </div>
 
 )
