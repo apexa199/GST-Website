@@ -531,7 +531,7 @@ export default function Header() {
       </Container>
       {/* <------------------Social Media section End--------> */}
       {/* <--------------About us start--------------------> */}
-      <Container fluid className="bg-light pt-5 ">
+      <Container fluid className="bg-light pt-5 mt-2 ">
         <Row className="mx-5">
           <Col className="mb-5">
             <Row>
