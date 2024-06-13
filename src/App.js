@@ -19,16 +19,18 @@ import { AddSales } from "./pages/AddSales";
 
 
 
+
+
 function App() {
   return (
     <Router>
       <Sidebar />
       <Routes>
         <Route path="/DashBoard" exact component={Overview} />
-        <Route path="/Sales" exact component={Sales} />
-        <Route path="/AddSales" exact component={AddSales} />
-        <Route path="/Sales/SalesReturn" exact component={SalesReturn} />
-        {/* <Route path="/Purchase" exact component={Purchase} />
+        <Route path="/Sales" exact component={<Sales/>} >
+        <Route path="AddSales" exact component={<AddSales/>} />
+        <Route path="SalesReturn" exact component={< SalesReturn/>} /></Route>
+        <Route path="/Purchase" exact component={Purchase} />
         <Route path="/Purchase/PurchaseReturn" exact component={PurchaseReturn} />
         <Route path="/Items" exact component={Items} />
         <Route path="/Items/AddItem" exact component={AddItems} />
@@ -53,7 +55,7 @@ function App() {
         <Route path="/Contact/CustomerList" exact component={CustomerList} />
         <Route path="/Contact/AddSupplier" exact component={AddSupplier} />
         <Route path="/Contact/SupplierList" exact component={SupplierList} />
-        <Route path="/Header" exact Component={Header}/> */}
+        <Route path="/Header" exact Component={Header}/>
       </Routes>
       <Header/>
     </Router>

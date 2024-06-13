@@ -5,3 +5,4 @@ export const AddSales = () => {
     <div>AddSales</div>
   )
 }
+
